@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sVX-R9-z1I">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SAFETY TIPS-->
+        <scene sceneID="nHd-K4-GUA">
+            <objects>
+                <viewController id="UNd-wW-anC" customClass="InstructionsViewController" customModule="NIBM_COVID_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dkM-iy-moL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poster" translatesAutoresizingMaskIntoConstraints="NO" id="BHY-o9-ciV">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fDA-AB-hbG" firstAttribute="bottom" secondItem="BHY-o9-ciV" secondAttribute="bottom" id="5Tl-R4-NiV"/>
+                            <constraint firstItem="BHY-o9-ciV" firstAttribute="top" secondItem="fDA-AB-hbG" secondAttribute="top" id="XI9-WO-gBk"/>
+                            <constraint firstItem="fDA-AB-hbG" firstAttribute="trailing" secondItem="BHY-o9-ciV" secondAttribute="trailing" id="Y6R-oK-ggP"/>
+                            <constraint firstItem="BHY-o9-ciV" firstAttribute="leading" secondItem="fDA-AB-hbG" secondAttribute="leading" id="mTA-Ue-cGA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fDA-AB-hbG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SAFETY TIPS" id="59q-JX-14h">
+                        <barButtonItem key="rightBarButtonItem" image="power" catalog="system" id="01s-iZ-YUP">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didTapLogout:" destination="UNd-wW-anC" id="ubB-vH-oPh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c46-NK-CMk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-871.01449275362324" y="529.6875"/>
+        </scene>
+        <!--MAP-->
+        <scene sceneID="pch-n5-YbZ">
+            <objects>
+                <viewController id="LRd-Iw-zcS" customClass="HomeViewController" customModule="NIBM_COVID_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ISy-Wf-8lz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FMq-SZ-YRW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FMq-SZ-YRW" firstAttribute="top" secondItem="pMn-Xp-SgZ" secondAttribute="top" id="9Br-Qv-s83"/>
+                            <constraint firstAttribute="trailing" secondItem="FMq-SZ-YRW" secondAttribute="trailing" id="BwP-Rz-Zqp"/>
+                            <constraint firstItem="FMq-SZ-YRW" firstAttribute="leading" secondItem="ISy-Wf-8lz" secondAttribute="leading" id="MOu-yz-lcI"/>
+                            <constraint firstAttribute="bottom" secondItem="FMq-SZ-YRW" secondAttribute="bottom" id="pyg-or-Kbn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pMn-Xp-SgZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="MAP" id="TY2-fI-HWv">
+                        <barButtonItem key="rightBarButtonItem" image="power" catalog="system" id="FR2-xi-Ybi">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didTapLogout:" destination="LRd-Iw-zcS" id="RmJ-fO-OdY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="FMq-SZ-YRW" id="BI7-iL-tHZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u6I-A0-Mnb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1492.753623188406" y="-26.116071428571427"/>
+        </scene>
+        <!--TEMPERATURE-->
+        <scene sceneID="qe3-Z4-aIq">
+            <objects>
+                <viewController id="rsK-Mm-QxA" customClass="TemparatureViewController" customModule="NIBM_COVID_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dC1-iC-XAf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Temperature (Celsius)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rs9-cB-Qpl">
+                                <rect key="frame" x="25" y="425.5" width="364" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Ath-9l-OV5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="rsK-Mm-QxA" id="wuT-Cu-O8u"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOT-s3-QbO">
+                                <rect key="frame" x="25" y="495.5" width="364" height="45"/>
+                                <color key="backgroundColor" red="0.25882352939999997" green="0.5450980392" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Z9H-55-dQK"/>
+                                </constraints>
+                                <state key="normal" title="UPLOAD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapUpload:" destination="rsK-Mm-QxA" eventType="touchUpInside" id="aiG-Pe-75I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Rs9-cB-Qpl" firstAttribute="centerY" secondItem="dC1-iC-XAf" secondAttribute="centerY" id="3u6-yB-hhw"/>
+                            <constraint firstAttribute="trailing" secondItem="UOT-s3-QbO" secondAttribute="trailing" constant="25" id="QL8-wR-gIr"/>
+                            <constraint firstItem="UOT-s3-QbO" firstAttribute="top" secondItem="Rs9-cB-Qpl" secondAttribute="bottom" constant="25" id="bwq-vZ-gbK"/>
+                            <constraint firstItem="UOT-s3-QbO" firstAttribute="leading" secondItem="dC1-iC-XAf" secondAttribute="leading" constant="25" id="ehQ-eT-RvS"/>
+                            <constraint firstAttribute="trailing" secondItem="Rs9-cB-Qpl" secondAttribute="trailing" constant="25" id="jiF-pb-88w"/>
+                            <constraint firstItem="Rs9-cB-Qpl" firstAttribute="leading" secondItem="dC1-iC-XAf" secondAttribute="leading" constant="25" id="ssX-bU-cfa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B07-cK-hM2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TEMPERATURE" id="UWh-Qq-J04">
+                        <barButtonItem key="rightBarButtonItem" image="power" catalog="system" id="WLg-G8-Fy1">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didTapLogout:" destination="rsK-Mm-QxA" id="azB-fu-YOG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="txtTemp" destination="Rs9-cB-Qpl" id="uke-bL-7o7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eae-Tx-U94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582.60869565217399" y="-674.33035714285711"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ktl-Pt-7nY">
+            <objects>
+                <tabBarController storyboardIdentifier="HomeTabController" id="sVX-R9-z1I" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lk1-dn-YEy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zLi-IR-MOc" kind="relationship" relationship="viewControllers" id="91y-Dw-3cy"/>
+                        <segue destination="evn-pK-z9L" kind="relationship" relationship="viewControllers" id="jbR-hz-jOd"/>
+                        <segue destination="66H-Vv-foQ" kind="relationship" relationship="viewControllers" id="yEz-Tq-vRC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rtn-bU-ENZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1439" y="-339"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GdR-sU-Ih4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="66H-Vv-foQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="hand.point.right" catalog="system" id="RoC-EB-Ubc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZEc-7C-9CT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.25882352941176467" green="0.54509803921568623" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UNd-wW-anC" kind="relationship" relationship="rootViewController" id="cC5-Lq-uNY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ne9-Vj-uz5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1781.1594202898552" y="529.6875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wwX-S4-Nwo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="evn-pK-z9L" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="globe" catalog="system" id="w4C-Vt-gso"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eTE-Fk-a1g">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.25882352939999997" green="0.5450980392" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LRd-Iw-zcS" kind="relationship" relationship="rootViewController" id="JTv-ec-xVY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCe-wq-eQH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582.60869565217399" y="-26.116071428571427"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S6R-OG-08j">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zLi-IR-MOc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="thermometer" catalog="system" id="bMt-28-f1g"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="G4X-Ka-G1v">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.25882352941176467" green="0.54509803921568623" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rsK-Mm-QxA" kind="relationship" relationship="rootViewController" id="nnY-er-9Qi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M25-3C-FLg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-327.536231884058" y="-674.33035714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="hand.point.right" catalog="system" width="128" height="99"/>
+        <image name="poster" width="572" height="1218"/>
+        <image name="power" catalog="system" width="128" height="124"/>
+        <image name="thermometer" catalog="system" width="87" height="128"/>
+    </resources>
+</document>

@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireObjectMapper (5.2.1):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - MBProgressHUD (1.2.0)
+  - ObjectMapper (3.5.3)
+  - SKToast (1.0.0)
+  - SwiftKeychainWrapper (3.4.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - AlamofireObjectMapper (~> 5.2)
+  - MBProgressHUD (~> 1.2.0)
+  - ObjectMapper (~> 3.4)
+  - SKToast (~> 1.0.0)
+  - SwiftKeychainWrapper (~> 3.4)
+  - SwiftyJSON (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireObjectMapper
+    - MBProgressHUD
+    - ObjectMapper
+    - SKToast
+    - SwiftKeychainWrapper
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  SKToast: 789844fcac8e5bf1336e72ed4879ea865f5c1f23
+  SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: ee1d13c346bf832211d24105e2ae79c05f0dc74a
+
+COCOAPODS: 1.9.3
